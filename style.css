@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f9ff;
+  margin: 0;
+  padding: 20px;
+}
+h2 {
+  margin-top: 40px;
+  color: #444;
+}
+.section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.mood-buttons span {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.water-tracker button {
+  padding: 10px;
+  margin: 5px;
+  background: #cce5ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.breathing {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: #d0f0c0;
+  border-radius: 50%;
+  animation: breathe 6s infinite ease-in-out;
+}
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+.meal-log input,
+.weight-log input,
+.sleep-log input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.checklist label {
+  display: block;
+  margin: 5px 0;
+}
+.stretch-sequence {
+  display: flex;
+  flex-direction: column;
+}
+.stretch-item {
+  background: #e0f7fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.mental-journal textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+.graph-placeholder {
+  height: 150px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ccc,
+    #ccc 10px,
+    #fff 10px,
+    #fff 20px
+  );
+  border-radius: 10px;
+  margin-top: 10px;
+}
+/* Base styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f9ff;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #444;
+}
+
+/* Section cards */
+.section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Mood Tracker */
+.mood-buttons span {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+.mood-buttons span:hover {
+  transform: scale(1.3);
+}
+
+/* Water Tracker */
+.water-tracker button {
+  padding: 10px 14px;
+  margin: 5px;
+  font-size: 1.5rem;
+  background: #cce5ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.water-tracker button:hover {
+  background: #aad4ff;
+}
+
+/* Breathing Animation */
+.breathing {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: #d0f0c0;
+  border-radius: 50%;
+  animation: breathe 6s infinite ease-in-out;
+}
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Checklist */
+.checklist label {
+  display: block;
+  margin: 8px 0;
+  font-size: 1rem;
+}
+.checklist input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Stretch sequence */
+.stretch-sequence {
+  display: flex;
+  flex-direction: column;
+}
+.stretch-item {
+  background: #e0f7fa;
+  margin: 6px 0;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Journal */
+.mental-journal textarea {
+  resize: vertical;
+  font-size: 1rem;
+}
+.mental-journal p {
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* Graph placeholders */
+.graph-placeholder {
+  height: 150px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ddd,
+    #ddd 10px,
+    #fff 10px,
+    #fff 20px
+  );
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .breathing {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .stretch-item {
+    font-size: 0.9rem;
+  }
+}
